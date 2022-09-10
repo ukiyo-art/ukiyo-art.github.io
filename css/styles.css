@@ -107,7 +107,7 @@ body{
 }
 .projects_table{
     color: #F6E3CB;
-    width: 100%;
+    width: 100vw;
     border-collapse: collapse;
 }
 .projects_table td{
