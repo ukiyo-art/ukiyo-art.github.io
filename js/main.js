@@ -12,8 +12,6 @@ window.mobileCheck = function mobilecheck() {
     return check;
 };
 $(document).ready(function(){
-    const chungus = document.getElementById('bigchungus');
-    chungus.style.display = 'none';
     const airplane = document.getElementById('paper_airplane');
     airplane.style.display = 'none';
     const amogus = document.getElementById('amogus');
@@ -86,22 +84,6 @@ if(!mobileCheck()){
                 airplane.style.display = 'none'
             }
         })
-        const chungusanimation = anime({
-            targets: '.bigchungus',
-            delay: 100,
-            translateX: '-100vw',
-            autoplay: false,
-            easing: 'linear',
-            duration: 5000,
-            begin: function(){
-                const chungus = document.getElementById('bigchungus');
-                chungus.style.display = 'block';
-            },
-            complete: function(){
-                const chungus = document.getElementById('bigchungus');
-                chungus.style.display = 'none'
-            }
-        })
         const amogus = anime({
             targets: '.amogus',
             delay: 120,
@@ -124,9 +106,6 @@ if(!mobileCheck()){
                 airplaneanimaiton.play();
             }
             const myprojects = document.getElementById('myprojects');
-            if(window.pageYOffset == myprojects.offsetTop){
-                chungusanimation.play();
-            }
             if(window.pageYOffset == myprojects.offsetTop){
                 amogus.play();
             }

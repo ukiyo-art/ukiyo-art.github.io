@@ -105,8 +105,12 @@ body{
     padding: 0;
     display: inline;
 }
+.projects{
+    overflow-x: auto;
+}
 .projects_table{
     color: #F6E3CB;
+    max-width: 100%;
     width: 100vw;
     border-collapse: collapse;
 }
@@ -114,13 +118,6 @@ body{
     border: 0.2em solid #838bfc;
     padding: 2em;
     background-color: #777CBB;
-}
-.bigchungus{
-    position: absolute;
-    right: -2em;
-    top: 282vh;
-    width: 10em;
-    height: 10em;
 }
 .amogus{
     position: absolute;
