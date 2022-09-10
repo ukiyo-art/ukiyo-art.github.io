@@ -1,8 +1,8 @@
 body{
     padding: 0;
     margin: auto;
-    overflow-y: hidden;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 ::selection{
     background-color: #C9CBE4;
