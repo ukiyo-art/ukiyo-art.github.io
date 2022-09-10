@@ -1,0 +1,131 @@
+body{
+    padding: 0;
+    margin: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+::selection{
+    background-color: #C9CBE4;
+}
+.start_section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 40vh;
+    background-color: #EFD8C6;
+}
+.about_me_section{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding-top: 15vh;
+    background: rgb(243,218,185);
+    background: linear-gradient(159deg, rgba(243,218,185,1) 0%, rgba(119,124,187,1) 59%, rgba(91,116,174,1) 100%);
+    background-size: 200%;
+}
+.my_projects_section{
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 10em;
+    background-color: #5B74AE;
+}
+#aboutmebutton{
+    z-index: 1000;
+    border: none;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    color: white;
+    background-color: #222643;
+}
+#myprojectsbutton{
+    z-index: 1000;
+    border: none;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    color: white;
+    background-color: #777CBB;
+}
+#aboutmebutton:hover{
+    background-color: #777FBB;
+}
+#myprojectsbutton:hover{
+    background-color: #5b74ae;
+}
+#highlight{
+    padding-bottom: 0.30em;
+    background: -webkit-linear-gradient(#3E457A, #4A6296, #858CC1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.aboutmetext{
+    z-index: 1000;
+    font-size: 1.3em;
+    font-family: 'Walter Turncoat';
+}
+.aboutmeheader{
+    font-size: 4em;
+}
+.goUp img{
+    width: 1.5em;
+    height: 2em;
+}
+.goUp{
+    position: fixed;
+    bottom: 0.3em;
+    right: 0.3em;
+}
+.goUp:hover{
+    background-color: #F3DAB9;
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0.4em #F0D1A8;
+    border-radius: 3em;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #E4AC62;
+    border-radius: 2em;
+}
+.paper_airplane{
+    position: absolute;
+    top: 150vh;
+    left: -8vw;
+    width: 7em;
+    height: 5em;
+    z-index: 2;
+}
+.socials{
+    padding-right: 2.2em;
+}
+.socials li{
+    padding: 0;
+    display: inline;
+}
+.projects_table{
+    color: #F6E3CB;
+    width: 100%;
+    border-collapse: collapse;
+}
+.projects_table td{
+    border: 0.2em solid #838bfc;
+    padding: 2em;
+    background-color: #777CBB;
+}
+.bigchungus{
+    position: absolute;
+    right: -2em;
+    top: 282vh;
+    width: 10em;
+    height: 10em;
+}
+.amogus{
+    position: absolute;
+    left: -2em;
+    top: 290vh;
+    width: 5em;
+    height: 5em;
+}

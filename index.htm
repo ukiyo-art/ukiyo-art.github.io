@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <script src = "https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/anime.min.js"></script>
+    <link rel = "stylesheet" href = "css/styles.css?v=0.6"/>
+    <link rel = "stylesheet" href = "css/hover.css"/>
+    <title>ukiyo.dev portfolio</title>
+    <meta name = "author" content = "Dawid Gibaszek">
+    <meta name = "url" content = "ukiyo.dev">
+    <meta name = "theme-color" content = "#EFD8C6">
+    <meta name = "description" content = "Dawid Gibaszek's portfolio.">
+    <script src = 'js/main.js'></script>
+</head>
+<body>
+    <div class = 'start_section' id = 'start_section'>
+        <h1 id = 'loading'></h1>
+        <h1 id = 'start_header' style = 'display: none' class = 'animate__animated animate__jackInTheBox'>Hi, my name is <a href = '#' id = 'highlight' class="hvr-wobble-top">ukiyo</a></h1>
+        <p id = 'start' style = 'visibility: hidden;'>Welcome on my portfolio</p>
+        <span id = 'start' style = 'visibility: hidden;'><button id = 'aboutmebutton' onclick="scrollaboutme()" class='button hvr-buzz'>About me</button></span>
+        <span id = 'start' style = 'visibility: hidden;'><button id = 'myprojectsbutton' onclick = 'scrollmyprojects()' class='button hvr-buzz'>My projects</button></span>
+    </div>
+
+    <span id = 'start' style = 'visibility: hidden;'>
+    <div class = 'about_me_section' id = "aboutme">
+        <h1 data-aos="zoom-in" data-aos-easing="ease-in-out-cubic" data-aos-duration="500" class = 'aboutmeheader'>About me</h1>
+        <br><br>
+        <p class = 'aboutmetext' data-aos='fade' data-aos-easing='ease-in-out-cubic' data-aos-duration='500'>My name is <span id = 'highlight'>Dawid Gibaszek</span> and I'm from Poland. <br> I'm <span id = 'highlight'>16 years</span> old and I have been excited about computer science for about <span id = 'highlight'>6 years</span>. <br> I mostly programming in TypeScript, JavaScript and Python. <br> I'm student of programmist technical college <br> I learn new things so <span id = 'highlight'>fast</span> and I like doing <span id = 'highlight'>progress</span>.</p>
+        <ul class = 'socials' data-aos='fade' data-aos-easing='ease-in-out-cubic' data-aos-duration='500'>
+            <h3>My socials</h3>
+            <li><a class="hvr-bob" href = 'https://www.facebook.com/dawgib/'><img src = 'assets/facebook_icon.png'></a></li>
+            <li><a class="hvr-bob" href = 'https://www.instagram.com/methyphobiia/'><img src = 'assets/instagram_icon.png'></a></li>
+            <li><a class="hvr-bob" href = 'https://twitter.com/methyphobiia'><img src = 'assets/twitter_icon.png'></a></li>
+            <li><a class="hvr-bob" href = 'https://discordapp.com/users/349824405230321664'><img src = 'assets/discord_icon.png'></a></li>
+        </ul>
+        <span id = "start" style = 'visibility: hidden;'><button id = 'myprojectsbutton' onclick = 'scrollmyprojects()' class='button hvr-buzz'>My projects</button></span>
+    </div>
+    <div class = 'my_projects_section' id = 'myprojects' data-aos='zoom-in' data-aos-easing='ease-in-out-cubic' data-aos-duration='500'>
+        <h1 style = 'color: #F6E3CB'>My projects</h1>
+        <br><br>
+        <div class = 'projects'>
+            <table class = 'projects_table'>
+                <tr>
+                    <td><img src = 'assets/discord_sign.png' width="30em" height="30em"/></td>
+                    <td>
+                        <h1>Comfort-Taxi</h1>
+                        <p>Information site about taxi service</p>
+                    </td>
+                    <td><img src = 'assets/discord_sign.png' width="30em" height="30em"/></td>
+                </tr>
+                <tr>
+                    <td>
+                        <h1>Fistaszek</h1>
+                        <p>Discord bot writed with node.js and discord.js library in version 12. <br>More informations: Fistaszekk.pl</p>
+                    </td>
+                    <td><img src = 'assets/website_sign.png' width="30em" height="30em"/></td>
+                    <td>
+                        <h1>Fistaszekv13</h1>
+                        <p>Better discord bot writed with node.js and discord.js library in version 13. <br>More informations: Fistaszekk.pl</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <button class = 'goUp' onclick='goUp()'><img src = 'assets/arrowUp.png'></button>
+    </span>
+        <img src = 'assets/bigchungus.gif' class = 'bigchungus' id = 'bigchungus'/>
+        <img src = 'assets/amogus.gif' class = 'amogus' id = 'amogus'/>
+        <img src = 'assets/paper_airplane.png' class = 'paper_airplane' id = 'paper_airplane'/>
+</body>
+</html>
