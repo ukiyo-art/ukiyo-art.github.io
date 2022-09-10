@@ -68,7 +68,7 @@ window.addEventListener("load", () =>{
 if(!mobileCheck()){
         const airplaneanimaiton = anime({
             targets: '.paper_airplane',
-            delay: 100,
+            delay: 120,
             translateX: '105vw',
             translateY: '30vh',
             rotate: 40,
